@@ -1,0 +1,10 @@
+{
+  // Copy the r2_buckets entry into your environment config only after the
+  // private bucket exists. No account identifier or secret belongs here.
+  "r2_buckets": [
+    {
+      "binding": "FILES",
+      "bucket_name": "replace-with-private-bucket-name"
+    }
+  ]
+}

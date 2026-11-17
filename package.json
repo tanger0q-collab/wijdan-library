@@ -1,0 +1,24 @@
+{
+  "name": "wijdan-study",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "npm run build && ../node_modules/.bin/wrangler dev --ip 127.0.0.1 --port 8788",
+    "test": "node --test tests/*.test.mjs",
+    "db:local": "../node_modules/.bin/wrangler d1 migrations apply DB --local",
+    "deploy": "npm run build && ../node_modules/.bin/wrangler deploy --config wrangler.production.jsonc"
+  },
+  "dependencies": {
+    "@tesseract.js-data/ara": "1.0.0",
+    "@tesseract.js-data/eng": "1.0.0",
+    "fflate": "0.8.3",
+    "pdf-lib": "1.17.1",
+    "pdfjs-dist": "6.5.438",
+    "tesseract.js": "7.0.0"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1"
+  }
+}

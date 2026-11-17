@@ -1,0 +1,7 @@
+{
+  "name": "wijdan-study",
+  "main": "src/worker.js",
+  "compatibility_date": "2025-11-01",
+  "assets": {"directory": "dist", "binding": "ASSETS", "run_worker_first": true, "html_handling": "none"},
+  "d1_databases": [{"binding": "DB", "database_name": "wijdan-study", "database_id": "local-wijdan", "migrations_dir": "migrations"}]
+}

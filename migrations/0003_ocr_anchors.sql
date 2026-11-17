@@ -1,0 +1,1 @@
+ALTER TABLE library_index ADD COLUMN anchors TEXT NOT NULL DEFAULT '[]';
